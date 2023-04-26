@@ -1,0 +1,25 @@
+#center {
+    background-image: linear-gradient(rgb(91, 195, 54),rgb(174, 13, 62)rgba(146,117,5));
+
+}
+#center1
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 70.2%;
+    height: 165px;
+   
+}
+#center2
+{
+    background-image: linear-gradient(rgb(81, 30, 144),rgba(219,101,11),rgb(107, 89, 18));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: underline rgb(37,52,4);
+}
+   
+
+#div{
+    background-image: linear-gradient(rgb(43, 226, 107),rgb(74, 128, 16),rgb(169, 215, 227));
+}

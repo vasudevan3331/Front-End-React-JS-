@@ -1,31 +1,31 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import './Image.css'
-import { useState } from 'react'
-import { alter } from './CustomerDetails'
+import { useState } from 'react';
+import'./Image.css'
+import { alter } from './CustomerDetails';
 
 
-export let Updating=(myvalue)=>
+export var Updating=(myvalue)=>
 {
     const[pos,setPos]=useState(myvalue.who)
-
     const[process,setprocess]=useState({
         "cusId":myvalue.mention.cusId,
         "cusName":myvalue.mention.cusName,
         "cusEmail":myvalue.mention.cusEmail,
         "cusBillno":myvalue.mention.cusBillno,
-        "cusContact":myvalue.mention.cusName,
+        "cusContact":myvalue.mention.cusContact,
         "cusAddress":myvalue.mention.cusAddress,
-        "cusDateofpurchase":myvalue.mention.cusDateofpurchase,
+        "cusDateofpurchase":myvalue.mention.cusDateofpurchase
+
     })
-    
+
     const track=(agi)=>
     {
         const{name,value}=agi.target
         setprocess(
             (old)=>
             {
-                return {
+                return{
                     ...old,
                     [name]:value
                 }
@@ -35,92 +35,89 @@ export let Updating=(myvalue)=>
 
     const reset=()=>
     {
-        alert('Rejected Successfully')
-
+        alert('Rejected successfully')
     }
 
+    
     const Update=()=>
     {
-        alter(process,pos)
-        alter("your value is updated")
+       alert(process,[pos])
+       alert("your value is updated")
     }
-        return
-        (
-            <>
-            <div className="container mt-5" >
-                 <span id='center1'></span>
-             <div className="row justify-content-center">
-                 <div className="col-lg-8 col-md-0 col-sm-12 shadow-lg p-3 " id="center">
-                 <h4 className="text-center mt-5 mb-5" id='center2'><i class="bi bi-bicycle"></i> Bike Details Form</h4>
-                     <div className="row justify-content-center " >
-                         <div className="row">
-                             <div className="col">
-                                 <label className="form-label" >CustomerId</label>
-                                 <input type="text" 
-                                 onChange={track}
-                                 value={process.cusId}
-                                  name="cusId"
+    return(
+        <>
+        
+         <div className="container mt-5" id="div">
+                <span id='center1'></span>
+            <div className="row justify-content-center">
+                <div className="col-lg-8 col-md-0 col-sm-12 shadow-lg p-3 " id="center">
+                <h4 className="text-center mt-5 mb-5" id='center2'><i class="bi bi-bicycle"></i> Bike Details Form</h4>
+                    <div className="row justify-content-center " >
+                        <div className="row">
+                            <div className="col">
+                                <label className="form-label" >CustomerID</label>
+                                <input type="text" 
+                                onChange={track}
+                                value={process.cusId}
+                                 name="cusId"
+                                className="form-control" />
+                           </div>
+                            <div className="col">
+                                <label className="form-label" >CustomerBillno</label>
+                                <input type="text" 
+                                name="cusBikeno"
+                                onChange={track}
+                                value={process.cusBillno}
+                                className="form-control" />
+                            </div>
+                        </div>
+                        </div>  
+                    <div className="mt-3">
+                                <label className="form-label" >CustomerName</label>
+                                <input type="tel" 
+                                name="cusName"
+                                onChange={track}
+                                value={process.cusName}
+                                className="form-control" />
+                    </div>
+                    <div className="mt-3">
+                                <label className="form-label" >CustomerContactNO</label>
+                                <input type="tel" 
+                                name="cusContactno"
+                                onChange={track}
+                                value={process.cusContact}
+                                className="form-control" />
+                    </div>
+                    <div className="mt-3">
+                                <label className="form-label" >CustomerEmail</label>
+                                <input type="email" 
+                                name="cusEmail"
+                                onChange={track}
+                                value={process.cusEmail}
+                                className="form-control" />
+                    </div>
+                    <div className="mt-3">
+                                <label className="form-label" >DateofPurchase</label>
+                                <input type="date"
+                                name="cusDateofpurchase"
+                                onChange={track}
+                                value={process.cusDateofpurchase}
                                  className="form-control" />
-                             </div>
-                             <div className="col">
-                                 <label className="form-label" >CustomerName</label>
-                                 <input type="text" 
-                                 name="cusName"
-                                 onChange={track}
-                                 value={process.cusName}
-                                 className="form-control" />
-                             </div>
-                         </div>
-                     </div>  
-                     <div className="mt-3">
-                                 <label className="form-label" >CustomerEmail</label>
-                                 <input type="email" 
-                                 name="cusEmail"
-                                 onChange={track}
-                                 value={process.cusEmail}
-                                 className="form-control" />
-                     </div>
-                     <div className="mt-3">
-                                 <label className="form-label" >CustomerBillno</label>
-                                 <input type="tel" 
-                                 name="cusBillno"
-                                 onChange={track}
-                                 value={process.cusBillno}
-                                 className="form-control" />
-                     </div>
-                     <div className="mt-3">
-                                 <label className="form-label" >CustomerContactNO</label>
-                                 <input type="tel" 
-                                 name="cusContact"
-                                 onChange={track}
-                                 value={process.cusContact}
-                                 className="form-control" />
-                     </div>
-                     <div className="mt-3">
-                        <label className="form-lable">CustomerAddress</label>
-                        <textarea name="cusAddress"
-                        onChange={track}
+                    </div>
+                    <div className="mt-3">
+                        <label className="form-label">Address</label>
+                        <textarea onChange={track}
                         value={process.cusAddress}
                         className="form-control"></textarea>
-                        
-                     </div>
-                     <div className="mt-3">
-                                 <label className="form-label" >DateofPurchase</label>
-                                 <input type="date"
-                                 name="cusDateofpurchase"
-                                 onChange={track}
-                                 value={process.cusDateofpurchase}
-                                  className="form-control" />
-                     </div>
-                     <div className="row justify-content-around mt-4">
-                         <button className="btn btn-outline-success col-3 ms-3" onClick={Update}  >Update</button>
-                         <button className="btn btn-outline-danger col-3 me-3" onClick={reset} type="reset" value="Reset" >Reset</button>
-                     </div>
-                 </div>
-                 </div>
-                 </div>
-         </>
-        );
-    
+                    </div>
+                    <div className="row justify-content-around mt-4">
+                        <button className="btn btn-outline-success col-3 ms-3" onClick={Update}  >Update</button>
+                        <button className="btn btn-outline-danger col-3 me-3" onClick={reset} type="reset" value="Reset" >Reset</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+</>
 
+    );
 }
