@@ -47,7 +47,7 @@ export var Updating=(myvalue)=>
     return(
         <>
         
-         <div className="container mt-5" id="div">
+        <div className="container mt-5" id="div">
                 <span id='center1'></span>
             <div className="row justify-content-center">
                 <div className="col-lg-8 col-md-0 col-sm-12 shadow-lg p-3 " id="center">
@@ -65,7 +65,7 @@ export var Updating=(myvalue)=>
                             <div className="col">
                                 <label className="form-label" >CustomerBillno</label>
                                 <input type="text" 
-                                name="cusBikeno"
+                                name="cusBillno"
                                 onChange={track}
                                 value={process.cusBillno}
                                 className="form-control" />
@@ -74,7 +74,7 @@ export var Updating=(myvalue)=>
                         </div>  
                     <div className="mt-3">
                                 <label className="form-label" >CustomerName</label>
-                                <input type="tel" 
+                                <input type="text" 
                                 name="cusName"
                                 onChange={track}
                                 value={process.cusName}
@@ -83,7 +83,7 @@ export var Updating=(myvalue)=>
                     <div className="mt-3">
                                 <label className="form-label" >CustomerContactNO</label>
                                 <input type="tel" 
-                                name="cusContactno"
+                                name="cusContact"
                                 onChange={track}
                                 value={process.cusContact}
                                 className="form-control" />

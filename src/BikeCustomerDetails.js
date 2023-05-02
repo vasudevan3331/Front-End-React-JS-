@@ -62,7 +62,7 @@ export var Register=()=>
                             <div className="col">
                                 <label className="form-label" >CustomerBillno</label>
                                 <input type="text" 
-                                name="cusBikeno"
+                                name="cusBillno"
                                 onChange={track}
                                 value={process.cusBillno}
                                 className="form-control" />
@@ -71,7 +71,7 @@ export var Register=()=>
                         </div>  
                     <div className="mt-3">
                                 <label className="form-label" >CustomerName</label>
-                                <input type="tel" 
+                                <input type="text" 
                                 name="cusName"
                                 onChange={track}
                                 value={process.cusName}
@@ -80,7 +80,7 @@ export var Register=()=>
                     <div className="mt-3">
                                 <label className="form-label" >CustomerContactNO</label>
                                 <input type="tel" 
-                                name="cusContactno"
+                                name="cusContact"
                                 onChange={track}
                                 value={process.cusContact}
                                 className="form-control" />
@@ -96,7 +96,7 @@ export var Register=()=>
                     <div className="mt-3">
                                 <label className="form-label" >DateofPurchase</label>
                                 <input type="date"
-                                name="Dateofpurchase"
+                                name="cusDateofpurchase"
                                 onChange={track}
                                 value={process.cusDateofpurchase}
                                  className="form-control" />
