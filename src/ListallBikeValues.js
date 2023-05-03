@@ -1,4 +1,4 @@
-import './Images.css'
+import './Image.css'
 
 export const ListallbikeDetails=()=>
 {

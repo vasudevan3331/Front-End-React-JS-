@@ -4,7 +4,7 @@
 }
 #center1
 {
-    background-image: url(../public/tvs\ img.jpg);
+    background-image: url(../public/Images/images.jpg);
     display: block;
     margin-left: auto;
     margin-right: auto;   
@@ -14,7 +14,7 @@
 }
 #service
 {
-    background-image: url(../public/tvs\ logo.png);
+    background-image: url(../public/Images/tvs\ logo.png);
     display: block;
     margin-left: auto;
     margin-right: auto;   
