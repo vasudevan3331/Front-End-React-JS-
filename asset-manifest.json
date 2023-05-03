@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/vasudevan3331/Front-End-React-JS-/static/css/main.42d30d23.css",
-    "main.js": "/vasudevan3331/Front-End-React-JS-/static/js/main.b29178b2.js",
-    "static/media/bootstrap-icons.woff?": "/vasudevan3331/Front-End-React-JS-/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
-    "static/media/bootstrap-icons.woff2?": "/vasudevan3331/Front-End-React-JS-/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "static/media/tvs img.jpg": "/vasudevan3331/Front-End-React-JS-/static/media/tvs img.855f90544238b644bf99.jpg",
-    "index.html": "/vasudevan3331/Front-End-React-JS-/index.html",
-    "main.42d30d23.css.map": "/vasudevan3331/Front-End-React-JS-/static/css/main.42d30d23.css.map",
-    "main.b29178b2.js.map": "/vasudevan3331/Front-End-React-JS-/static/js/main.b29178b2.js.map"
+    "main.css": "/Front-End-React-JS-/static/css/main.482ff128.css",
+    "main.js": "/Front-End-React-JS-/static/js/main.e77a0ad9.js",
+    "static/media/bootstrap-icons.woff?": "/Front-End-React-JS-/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/Front-End-React-JS-/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "index.html": "/Front-End-React-JS-/index.html",
+    "main.482ff128.css.map": "/Front-End-React-JS-/static/css/main.482ff128.css.map",
+    "main.e77a0ad9.js.map": "/Front-End-React-JS-/static/js/main.e77a0ad9.js.map"
   },
   "entrypoints": [
-    "static/css/main.42d30d23.css",
-    "static/js/main.b29178b2.js"
+    "static/css/main.482ff128.css",
+    "static/js/main.e77a0ad9.js"
   ]
 }
