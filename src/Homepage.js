@@ -41,7 +41,7 @@ export const Homepage=()=>
     return(
         <>
         <div id="bc1">
-            <Navbar expand="lg" variant="dark" >
+            <Navbar expand="lg" variant="light" >
                 <Container>
                     <Navbar.Brand href="/" className="">TVS <TwoWheelerSharpIcon></TwoWheelerSharpIcon> Servicecenter</Navbar.Brand>
                     <Navbar.Toggle aria-controls="vasu" />
