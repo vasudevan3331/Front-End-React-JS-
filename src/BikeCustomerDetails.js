@@ -5,7 +5,7 @@ import'./Image.css'
 import { create } from './CustomerDetails';
 
 
-export var Register=()=>
+export var Register1=()=>
 {
     const[process,setprocess]=useState({
         "cusId":0,
