@@ -4,12 +4,22 @@
 }
 #center1
 {
+    background-image: url(../public/tvs\ img.jpg);
     display: block;
     margin-left: auto;
     margin-right: auto;   
     width: 70.2%;
     height: 165px;
    
+}
+#service
+{
+    background-image: url(../public/tvs\ logo.png);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 31.2%;
+    height: 400px;
 }
 #center2
 {
@@ -18,8 +28,24 @@
     color: transparent;
     text-decoration: underline rgb(37,52,4);
 }
+#bc1
+{
+  background-color: rgb(177, 135, 120);
+}
+  #texting
+  {
+    color: rgb(168, 63, 28);
+    font-family: cursive;
+    font-style: italic;
+  }
+  #servicebg
+  {
+    background-image: linear-gradient(rgba(49, 5, 5, 0.97),rgb(241, 145, 71),rgba(242, 206, 63, 0.833));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
    
 
 #div{
-    background-image: linear-gradient(rgb(43, 226, 107),rgb(74, 128, 16),rgb(169, 215, 227));
+    background-image: linear-gradient(rgb(90, 24, 156),rgb(74, 128, 16),rgb(169, 215, 227));
 }

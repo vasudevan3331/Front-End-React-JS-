@@ -5,7 +5,7 @@ import'./Image.css'
 import { alter } from './CustomerDetails';
 
 
-export var Updating=(myvalue)=>
+export var Updating1=(myvalue)=>
 {
     const[pos,setPos]=useState(myvalue.who)
     const[process,setprocess]=useState({
@@ -41,7 +41,7 @@ export var Updating=(myvalue)=>
     
     const Update=()=>
     {
-       alert(process,[pos])
+       alter(process,[pos])
        alert("your value is updated")
     }
     return(
